@@ -53,7 +53,7 @@ La topologie finale contient :
 - 1 serveur DHCP/DNS : `SRV-DHCP-DNS`
 - 1 serveur web en DMZ : `SRV-WEB-DMZ`
 
-![Topologie finale](../captures/Topologie%20finale.png)
+![Topologie finale](captures/Topologie%20finale.png)
 
 ---
 
@@ -124,7 +124,7 @@ Le serveur web est placé dans la DMZ.
 |---|---:|---|
 | SRV-WEB-DMZ | 192.168.60.10 | HTTP |
 
-![Page web DMZ depuis PC-Invite](../captures/pc%20invite%20web-dmz-ok.png)
+![Page web DMZ depuis PC-Invite](captures/pc%20invite%20web-dmz-ok.png)
 
 ---
 
@@ -160,11 +160,11 @@ Les invités ne peuvent pas :
 | Ping vers VLAN Admin | Bloqué |
 | Accès HTTP à `intranet.secureconnect.local` | Autorisé |
 
-![Tests PC-Invite - ACL bloquées 1](../captures/pc%20invite%20acl%20bloque%201.png)
+![Tests PC-Invite - ACL bloquées 1](captures/pc%20invite%20acl%20bloque%201.png)
 
-![Tests PC-Invite - ACL bloquées 2](../captures/pc%20invite%20acl%20bloque%202.png)
+![Tests PC-Invite - ACL bloquées 2](captures/pc%20invite%20acl%20bloque%202.png)
 
-![Page web DMZ depuis PC-Invite](../captures/pc%20invite%20web-dmz-ok.png)
+![Page web DMZ depuis PC-Invite](captures/pc%20invite%20web-dmz-ok.png)
 
 ### VLAN Employés
 
@@ -189,9 +189,9 @@ Les employés ne peuvent pas :
 | Ping vers serveur web DMZ | Autorisé |
 | Ping vers Direction | Autorisé |
 
-![Tests PC-Employes 1](../captures/pc%20employes%20tests%201.png)
+![Tests PC-Employes 1](captures/pc%20employes%20tests%201.png)
 
-![Tests PC-Employes 2](../captures/pc%20employes%20tests%202.png)
+![Tests PC-Employes 2](captures/pc%20employes%20tests%202.png)
 
 ---
 
@@ -214,7 +214,7 @@ La sécurité SSH repose sur :
 - SSH version 2 ;
 - une ACL qui autorise uniquement `PC-Admin`.
 
-![SSH depuis PC-Admin](../captures/pc%20admin%20ssh%20ok.png)
+![SSH depuis PC-Admin](captures/pc%20admin%20ssh%20ok.png)
 
 ---
 
@@ -237,9 +237,9 @@ Les ports inutilisés sont :
 
 Cela permet de réduire le risque qu’un appareil non autorisé soit branché sur le réseau.
 
-![Port Security SW1](../captures/sw1%20port%20security.png)
+![Port Security SW1](captures/sw1%20port%20security.png)
 
-![Port Security SW2](../captures/sw2%20port%20security.png)
+![Port Security SW2](captures/sw2%20port%20security.png)
 
 ---
 
@@ -247,15 +247,15 @@ Cela permet de réduire le risque qu’un appareil non autorisé soit branché s
 
 ### VLAN sur SW1-Core
 
-![VLAN SW1](../captures/SW1%20vlan%20brief.png)
+![VLAN SW1](captures/SW1%20vlan%20brief.png)
 
 ### VLAN sur SW2-Access
 
-![VLAN SW2](../captures/SW2%20vlan%20brief.png)
+![VLAN SW2](captures/SW2%20vlan%20brief.png)
 
 ### ACL sur le routeur
 
-![ACL sur R1](../captures/R1%20access%20lists.png)
+![ACL sur R1](captures/R1%20access%20lists.png)
 
 Les commandes suivantes ont été utilisées pour vérifier le bon fonctionnement du projet :
 
